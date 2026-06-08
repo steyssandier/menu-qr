@@ -10,9 +10,39 @@
 
 <body>
 
-<div class="container">
+<!--PANTALLA 1: IDIOMA -->
+<div id="screen-language" class="screen active">
 
-<h1>🍽 La terraseta de Lesseps</h1>
+<h2>🌍 Elige idioma</h2>
+
+<button onclick="setLang('es')">🇪🇸 Español</button>
+<button onclick="setLang('ca')">🏴 Català</button>
+<button onclick="setLang('en')">🇬🇧 English</button>
+
+</div>
+
+<!-- PANTALLA 2: CATEGORÍAS -->
+<div id="screen-menu" class="screen hidden">
+
+<h2 id="title">Menú</h2>
+
+<button onclick="show('desayunos')">☕ Desayunos</button>
+<button onclick="show('carta')">🍽 Carta</button>
+<button onclick="show('cocteles')">🍸 Cócteles</button>
+<button onclick="show('vinos')">🍷 Vinos</button>
+
+</div>
+
+<!-- PANTALLA 3: CONTENIDO -->
+
+<div id="desayunos" class="screen hidden">
+<h2>Desayunos</h2>
+<p>Café</p>
+<p>Croissant</p>
+<button onclick="back()">⬅ Volver</button>
+</div>
+
+
 
 <select id="language">
 <option value="es">Español</option>
